@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/driverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:layout_alignBaseline="@+id/driverStatus"
+            android:textSize="20dp"
+            android:text="name"/>
+
+        <TextView
+            android:id="@+id/driverDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/driverName"
+            android:layout_toLeftOf="@+id/driverPerformance"
+            android:layout_weight="8"
+            android:text="address"/>
+
+        <TextView
+            android:id="@+id/driverPerformance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignBaseline="@+id/driverStatus"
+            android:layout_toLeftOf="@id/driverStatus"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="99/99/99"/>
+
+        <Button
+            android:id="@+id/driverStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#fff"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="address"/>
+
+</RelativeLayout>
